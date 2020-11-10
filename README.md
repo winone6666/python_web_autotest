@@ -1,0 +1,1 @@
+This repository is for upgrading autotester's skills with Selenium and Python.
