@@ -21,8 +21,13 @@ class ProductPageLocators():
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, 'div.alert-success')
 
 class BasePageLocators:
+    BASKET_LINK = (By.CSS_SELECTOR, 'span > [href="/ru/basket/"]')
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
 
-
-
+class BasketPageLocators:
+    BASKET_CHECKOUT_BTN = (By.CSS_SELECTOR, 'a.btn-primary.btn-block')
+    BASKET_GOOD_ITEM = (By.CSS_SELECTOR, 'div.basket-items')
+    BASKET_TOTAL_INFO = (By.CSS_SELECTOR, '#basket_totals')
+    BASKET_VOUCHER_INFO = (By.CSS_SELECTOR, '#voucher_form_link')
+    EMPTY_BASKET_RU_TEXT = (By.XPATH, '//p[contains(., \'Ваша корзина пуста\')]')  #localization ru
