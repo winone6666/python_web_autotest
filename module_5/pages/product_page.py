@@ -32,5 +32,5 @@ class ProductPage(BasePage):
             "Success message is presented, but should not be"
 
     def should_not_be_element_visible(self):
-        assert self.is_disappeared(*ProductPageLocators.LOCATOR), \
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
             "Success message is not visible, but it was visible before"
