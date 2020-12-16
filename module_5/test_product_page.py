@@ -13,14 +13,6 @@ class TestProductPage:
         page.should_be_equal_product_name_in_basket()
         page.should_be_equal_amount_in_basket()
 
-    @pytest.mark.xfail(reason="The element is on the page")
-    def test_guest_cant_see_success_message_after_adding_product_to_basket(self, browser):
-        page = ProductPage(browser, link)
-        page.open()
-        page.open_math_alert()
-        page.solve_quiz_and_get_code()
-        page.should_not_be_success_message()
-
     def test_guest_cant_see_success_message(self, browser):
         page = ProductPage(browser, link)
         page.open()
@@ -55,3 +47,20 @@ class TestProductPage:
         page.should_not_be_basket_total_info()
         page.should_not_be_checkout_btn_in_busket()
         page.should_not_be_goods_in_basket()
+
+class TestUserAddToBasketFromProductPage:
+    @pytest.fixture(scope='function', autouse=True)
+    def setup(self):
+
+    def test_user_cant_see_success_message(self, browser):
+        page = ProductPage(browser, link)
+        page.open()
+        page.should_not_be_success_message()
+
+    def test_user_can_add_product_to_basket(self, browser):
+        page = ProductPage(browser, link)
+        page.open()
+        page.open_math_alert()
+        page.solve_quiz_and_get_code()
+        page.should_be_equal_product_name_in_basket()
+        page.should_be_equal_amount_in_basket()

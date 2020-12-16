@@ -2,6 +2,9 @@ from .base_page import BasePage
 from .locators import LoginPageLocators
 
 class LoginPage(BasePage):
+    def register_new_user(self, email, password):
+
+
     def should_be_login_page(self):
         self.should_be_login_url()
         self.should_be_login_form()

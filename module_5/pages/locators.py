@@ -24,6 +24,7 @@ class BasePageLocators:
     BASKET_LINK = (By.CSS_SELECTOR, 'span > [href="/ru/basket/"]')
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketPageLocators:
     BASKET_CHECKOUT_BTN = (By.CSS_SELECTOR, 'a.btn-primary.btn-block')
