@@ -1,4 +1,6 @@
 import pytest
+
+from .pages.login_page import LoginPage
 from .pages.product_page import ProductPage
 from .pages.basket_page import BasketPage
 
@@ -13,12 +15,14 @@ class TestProductPage:
                               "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer4",
                               "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer5",
                               "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer6",
-                              pytest.param("http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7",
-                                           marks=pytest.mark.xfail),
+                              pytest.param(
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7",
+                                  marks=pytest.mark.xfail),
                               "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer8",
-                              "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"])
-    @pytest.mark.a
-    def test_guest_can_add_product_to_basket(self, browser):
+                              "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"
+                              ])
+
+    def test_guest_can_add_product_to_basket(self, browser, link):
         page = ProductPage(browser, link)
         page.open()
         page.open_math_alert()
@@ -63,7 +67,13 @@ class TestProductPage:
 
 class TestUserAddToBasketFromProductPage:
     @pytest.fixture(scope='function', autouse=True)
-    def setup(self):
+    def setup(self, browser):
+        link = 'http://selenium1py.pythonanywhere.com/en-gb/accounts/login/'
+        page = LoginPage(browser, link)
+        page.open()
+        page.go_to_login_page()
+        page.register_new_user("sun", "Ololoshkin2020")
+        page.should_be_authorized_user()
 
     def test_user_cant_see_success_message(self, browser):
         page = ProductPage(browser, link)
