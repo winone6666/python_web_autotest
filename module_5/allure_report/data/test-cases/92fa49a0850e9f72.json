@@ -1,0 +1,105 @@
+{
+  "uid" : "92fa49a0850e9f72",
+  "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer2]",
+  "fullName" : "module_5.test_product_page.TestProductPage#test_guest_can_add_product_to_basket",
+  "historyId" : "518da5fddd401a3615850b0243953bc2",
+  "time" : {
+    "start" : 1608143724175,
+    "stop" : 1608143732133,
+    "duration" : 7958
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608143716334,
+      "stop" : 1608143724170,
+      "duration" : 7836
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a2bdb4c944eec42",
+      "name" : "stdout",
+      "source" : "a2bdb4c944eec42.txt",
+      "type" : "text/plain",
+      "size" : 75
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608143732146,
+      "stop" : 1608143761219,
+      "duration" : 29073
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "GolloLaptop"
+  }, {
+    "name" : "thread",
+    "value" : "11528-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "link",
+    "value" : "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer2'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "92fa49a0850e9f72.json",
+  "parameterValues" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer2'" ]
+}

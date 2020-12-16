@@ -1,0 +1,310 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "module_5",
+    "children" : [ {
+      "name" : "test_main_page",
+      "children" : [ {
+        "name" : "TestLoginFromMainPage",
+        "children" : [ {
+          "name" : "test_guest_can_go_to_login_page",
+          "uid" : "d0e6c7719d35b12",
+          "parentUid" : "d9e63c4664d258d4fbf9551a4b7f9e61",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143642223,
+            "stop" : 1608143652608,
+            "duration" : 10385
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_guest_should_see_login_link",
+          "uid" : "cc24e097267d36f1",
+          "parentUid" : "d9e63c4664d258d4fbf9551a4b7f9e61",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143662048,
+            "stop" : 1608143664917,
+            "duration" : 2869
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d9e63c4664d258d4fbf9551a4b7f9e61"
+      }, {
+        "name" : "TestMainPage",
+        "children" : [ {
+          "name" : "test_guest_cant_see_product_in_basket_opened_from_main_page",
+          "uid" : "4faed934369ad8e5",
+          "parentUid" : "dba79cf62a431f528f3544b9dc34a517",
+          "status" : "failed",
+          "time" : {
+            "start" : 1608143674706,
+            "stop" : 1608143677884,
+            "duration" : 3178
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "dba79cf62a431f528f3544b9dc34a517"
+      } ],
+      "uid" : "62f01456344d7392993b6d41da0a23df"
+    }, {
+      "name" : "test_product_page",
+      "children" : [ {
+        "name" : "TestProductPage",
+        "children" : [ {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0]",
+          "uid" : "d66deec7f11400d1",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143688219,
+            "stop" : 1608143694522,
+            "duration" : 6303
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0'" ]
+        }, {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer1]",
+          "uid" : "737935b4c3281fb4",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143704955,
+            "stop" : 1608143713307,
+            "duration" : 8352
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer1'" ]
+        }, {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer2]",
+          "uid" : "92fa49a0850e9f72",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143724175,
+            "stop" : 1608143732133,
+            "duration" : 7958
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer2'" ]
+        }, {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer3]",
+          "uid" : "cc7143e375b601c6",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143777048,
+            "stop" : 1608143783702,
+            "duration" : 6654
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer3'" ]
+        }, {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer4]",
+          "uid" : "991eaf131ca51796",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143839113,
+            "stop" : 1608143846316,
+            "duration" : 7203
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer4'" ]
+        }, {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer5]",
+          "uid" : "a0c2bc572835cdb3",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143856598,
+            "stop" : 1608143862672,
+            "duration" : 6074
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer5'" ]
+        }, {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer6]",
+          "uid" : "215131ae6670692c",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143872319,
+            "stop" : 1608143877167,
+            "duration" : 4848
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer6'" ]
+        }, {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7]",
+          "uid" : "cf5a7df5d5d2f294",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1608143886853,
+            "stop" : 1608143893209,
+            "duration" : 6356
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7'" ]
+        }, {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer8]",
+          "uid" : "a28f07ee5a3dc191",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143903153,
+            "stop" : 1608143908356,
+            "duration" : 5203
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer8'" ]
+        }, {
+          "name" : "test_guest_can_add_product_to_basket[http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9]",
+          "uid" : "7d895dc2a2d98372",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143918204,
+            "stop" : 1608143923124,
+            "duration" : 4920
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9'" ]
+        }, {
+          "name" : "test_guest_cant_see_success_message",
+          "uid" : "2038e410b75a2505",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143932445,
+            "stop" : 1608143939078,
+            "duration" : 6633
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_message_disappeared_after_adding_product_to_basket",
+          "uid" : "8d4c8f8439bd86f1",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1608143948805,
+            "stop" : 1608143956813,
+            "duration" : 8008
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_guest_should_see_login_link_on_product_page",
+          "uid" : "8019598e778b622",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143967796,
+            "stop" : 1608143971490,
+            "duration" : 3694
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_guest_can_go_to_login_page_from_product_page",
+          "uid" : "51af6582a6cfe91f",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608143981764,
+            "stop" : 1608143985336,
+            "duration" : 3572
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_guest_cant_see_product_in_basket_opened_from_product_page",
+          "uid" : "f0547d8b62431519",
+          "parentUid" : "79d2649691bfb892d427040eb65f872f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1608143995841,
+            "stop" : 1608143999285,
+            "duration" : 3444
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "79d2649691bfb892d427040eb65f872f"
+      }, {
+        "name" : "TestUserAddToBasketFromProductPage",
+        "children" : [ {
+          "name" : "test_user_cant_see_success_message",
+          "uid" : "ae4fea5b4ee484e5",
+          "parentUid" : "b072dc6a895f823b041fd6afb360d40a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608144018822,
+            "stop" : 1608144024867,
+            "duration" : 6045
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_user_can_add_product_to_basket",
+          "uid" : "4b92557ad9b75408",
+          "parentUid" : "b072dc6a895f823b041fd6afb360d40a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608144044582,
+            "stop" : 1608144052518,
+            "duration" : 7936
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b072dc6a895f823b041fd6afb360d40a"
+      } ],
+      "uid" : "debe48d64934bf842460b236088972f9"
+    }, {
+      "name" : "test_screenshots",
+      "children" : [ {
+        "name" : "test_item_page_has_add_basket_button",
+        "uid" : "ce1a42dd51b27620",
+        "parentUid" : "805347c75019a71a05fa382034023c4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608144063041,
+          "stop" : 1608144065973,
+          "duration" : 2932
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "805347c75019a71a05fa382034023c4d"
+    } ],
+    "uid" : "1b92dd24d2433d29580106c20b1794f5"
+  } ]
+}

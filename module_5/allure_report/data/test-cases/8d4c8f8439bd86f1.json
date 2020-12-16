@@ -1,0 +1,109 @@
+{
+  "uid" : "8d4c8f8439bd86f1",
+  "name" : "test_message_disappeared_after_adding_product_to_basket",
+  "fullName" : "module_5.test_product_page.TestProductPage#test_message_disappeared_after_adding_product_to_basket",
+  "historyId" : "b1c3189d6400963e937a7a94e38cea78",
+  "time" : {
+    "start" : 1608143948805,
+    "stop" : 1608143956813,
+    "duration" : 8008
+  },
+  "status" : "skipped",
+  "statusMessage" : "AssertionError: Success message is not visible, but it was visible before",
+  "statusTrace" : "self = <module_5.test_product_page.TestProductPage object at 0x0000011C8C4555E0>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"9b21b9795552285927c9b009da815339\")>\n\n    @pytest.mark.xfail(reason=\"The element is on the page\")\n    def test_message_disappeared_after_adding_product_to_basket(self, browser):\n        page = ProductPage(browser, link)\n        page.open()\n        page.open_math_alert()\n        page.solve_quiz_and_get_code()\n>       page.should_not_be_element_visible()\n\nmodule_5\\test_product_page.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <module_5.pages.product_page.ProductPage object at 0x0000011C8C48E2E0>\n\n    def should_not_be_element_visible(self):\n>       assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \\\n            \"Success message is not visible, but it was visible before\"\nE       AssertionError: Success message is not visible, but it was visible before\n\nmodule_5\\pages\\product_page.py:34: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608143942389,
+      "stop" : 1608143948801,
+      "duration" : 6412
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "AssertionError: Success message is not visible, but it was visible before",
+    "statusTrace" : "self = <module_5.test_product_page.TestProductPage object at 0x0000011C8C4555E0>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"9b21b9795552285927c9b009da815339\")>\n\n    @pytest.mark.xfail(reason=\"The element is on the page\")\n    def test_message_disappeared_after_adding_product_to_basket(self, browser):\n        page = ProductPage(browser, link)\n        page.open()\n        page.open_math_alert()\n        page.solve_quiz_and_get_code()\n>       page.should_not_be_element_visible()\n\nmodule_5\\test_product_page.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <module_5.pages.product_page.ProductPage object at 0x0000011C8C48E2E0>\n\n    def should_not_be_element_visible(self):\n>       assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \\\n            \"Success message is not visible, but it was visible before\"\nE       AssertionError: Success message is not visible, but it was visible before\n\nmodule_5\\pages\\product_page.py:34: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dcee7346f4717371",
+      "name" : "stdout",
+      "source" : "dcee7346f4717371.txt",
+      "type" : "text/plain",
+      "size" : 202
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608143956830,
+      "stop" : 1608143961658,
+      "duration" : 4828
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail(reason='The element is on the page')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "GolloLaptop"
+  }, {
+    "name" : "thread",
+    "value" : "11528-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail(reason='The element is on the page')" ]
+  },
+  "source" : "8d4c8f8439bd86f1.json",
+  "parameterValues" : [ ]
+}

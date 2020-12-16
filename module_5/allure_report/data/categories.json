@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: No empty basket text",
+      "children" : [ {
+        "name" : "test_guest_cant_see_product_in_basket_opened_from_main_page",
+        "uid" : "4faed934369ad8e5",
+        "parentUid" : "e04141b1ab9a6ec248134cceeacad26d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608143674706,
+          "stop" : 1608143677884,
+          "duration" : 3178
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_guest_cant_see_product_in_basket_opened_from_product_page",
+        "uid" : "f0547d8b62431519",
+        "parentUid" : "e04141b1ab9a6ec248134cceeacad26d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608143995841,
+          "stop" : 1608143999285,
+          "duration" : 3444
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e04141b1ab9a6ec248134cceeacad26d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
