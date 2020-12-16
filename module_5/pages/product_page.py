@@ -9,7 +9,6 @@ class ProductPage(BasePage):
     def should_be_promo_url(self):
         login_url = self.browser.current_url
         assert "?promo" in login_url, 'No word "?promo" in current url'
-        # реализуйте проверку на корректный url адрес
 
     def click_add_to_basket_btn(self):
         add_to_basket_btn = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET_BTN)
