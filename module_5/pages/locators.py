@@ -31,4 +31,4 @@ class BasketPageLocators:
     BASKET_GOOD_ITEM = (By.CSS_SELECTOR, 'div.basket-items')
     BASKET_TOTAL_INFO = (By.CSS_SELECTOR, '#basket_totals')
     BASKET_VOUCHER_INFO = (By.CSS_SELECTOR, '#voucher_form_link')
-    EMPTY_BASKET_RU_TEXT = (By.XPATH, '//p[contains(., \'Ваша корзина пуста\')]')  #localization ru
+    EMPTY_BASKET_RU_TEXT = (By.XPATH, '//p[contains(., \'Your basket is empty.\')]')  #localization en-GB
