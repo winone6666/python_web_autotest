@@ -13,7 +13,7 @@ class LoginPageLocators():
     SIGN_IN_BTN = (By.CSS_SELECTOR, '[name="login_submit"]')
     RESET_PASSWORD_BTN = (By.CSS_SELECTOR, '#id_login-redirect_url + p')
 
-class ResetPasswordLocators():
+class ResetPasswordPageLocators():
     EMAIL_INPUT_RESET = (By.CSS_SELECTOR, '#id_email')
     SEND_PASSWORD_EMAIL_BTN = (By.CSS_SELECTOR, '.btn.btn-primary.btn-lg')
     SUCCESS_MESSAGE_SENT_EMAIL =(By.CSS_SELECTOR, '.page-header.action > h1')
@@ -35,10 +35,14 @@ class ReviewPageLocators():
     EMAIL_INPUT = (By.CSS_SELECTOR, 'input[name="email"]')
     SAVE_REVIEW_BTN = (By.CSS_SELECTOR, '.form-group + button.btn.btn-primary.btn-lg')
     CANCEL_REVIEW_BTN =(By.CSS_SELECTOR, '.form-group + button.btn.btn-primary.btn-lg + a')
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, '#success_message')
 
-class ProductCatalogLocators():
+class ProductCatalogPageLocators():
     PRODUCT_NAME_IN_CATALOG = (By.CSS_SELECTOR, '.product_pod > h3 > a')
     PRODUCT_AMOUNT_IN_CATALOG = (By.CSS_SELECTOR, '.product_pod > div > p')
+    PRODUCT_STORE_INFO_IN_CATALOG = (By.CSS_SELECTOR, '.instock.availability')
+    PRODUCT_RATING_INFO_IN_CATALOG = (By.CSS_SELECTOR, '.instock.availability')
+    PRODUCT_IMAGE_IN_CATALOG = (By.CSS_SELECTOR, 'div.image_container > a')
     ADD_TO_BASKET_BTN_IN_CATALOG = (By.CSS_SELECTOR, '.btn.btn-primary.btn-block')
     HEADER_OF_PRODUCT_SEARCH_RU = (By.XPATH, '//h1[contains(., \'Товары, соответствующие запросу \')]')
     NO_PRODUCT_MESSAGE_RU = (By.XPATH, '//p[contains(., \'К сожалению, ничего не найдено.\')]')
