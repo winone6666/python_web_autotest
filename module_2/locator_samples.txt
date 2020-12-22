@@ -1,5 +1,0 @@
-input#user-first-name
-//input[@name="first-name-input"]
-input.form-control.third
-//input[@data-country-code="Russia"]
-//input[@class="form-control second"]
