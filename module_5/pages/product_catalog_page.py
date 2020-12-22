@@ -2,6 +2,7 @@ from .base_page import BasePage
 from .locators import ProductCatalogPageLocators
 from .locators import BasePageLocators
 
+
 class ProductCatalogPage(BasePage):
     def should_be_catalogue_url(self):
         login_url = self.browser.current_url
@@ -30,7 +31,7 @@ class ProductCatalogPage(BasePage):
 
     def should_be_find_special_product(self, product_for_search):
         assert product_for_search == self.find_product(product_for_search), \
-        'Found products is not equal of serched'
+            'Found products is not equal of serched'
         assert self.is_element_present(*ProductCatalogPageLocators.HEADER_OF_PRODUCT_SEARCH_RU), \
             'No info about search result'
 

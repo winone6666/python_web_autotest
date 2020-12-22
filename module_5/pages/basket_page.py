@@ -1,6 +1,7 @@
 from .base_page import BasePage
 from .locators import BasketPageLocators
 
+
 class BasketPage(BasePage):
     def should_be_basket_url(self):
         login_url = self.browser.current_url
@@ -39,4 +40,3 @@ class BasketPage(BasePage):
         self.apply_discount(self)
         assert self.is_element_present(*BasketPageLocators.DISCOUNT_SUCCESS_MESSAGE), \
             'The discount is not applied'
-
