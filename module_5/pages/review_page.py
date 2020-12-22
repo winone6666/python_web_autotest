@@ -1,6 +1,6 @@
 from .base_page import BasePage
 from .locators import ReviewPageLocators
-from .locators import BasePageLocators
+from .locators import ProductPageLocators
 
 class ReviewPage(BasePage):
     def should_be_review_url(self):
@@ -15,18 +15,17 @@ class ReviewPage(BasePage):
         assert self.is_element_present(*ReviewPageLocators.EMAIL_INPUT), 'No email field'
         assert self.is_element_present(*ReviewPageLocators.SAVE_REVIEW_BTN), 'No save button'
         assert self.is_element_present(*ReviewPageLocators.CANCEL_REVIEW_BTN), 'No cancel button'
+        return True
 
     def should_be_review_page(self):
-        self.should_be_review_url(()
+        self.should_be_review_url()
         self.should_be_review_form()
 
     def write_review(self):
-        #Data
         title = 'One book name'
         message = 'Text for review to check'
         name = 'User User'
         email = 'user@user.user'
-        #Arrange
         self.browser.find_element(*ReviewPageLocators.TITLE_INPUT).send_keys(title)
         self.browser.find_element(*ReviewPageLocators.MESSAGE_INPUT).send_keys(message)
         self.browser.find_element(*ReviewPageLocators.NAME_INPUT).send_keys(name)
@@ -41,9 +40,4 @@ class ReviewPage(BasePage):
     def cancel_writing_review(self):
         self.write_review()
         self.browser.find_element(*ReviewPageLocators.CANCEL_REVIEW_BTN).click()
-        assert not self.should_be_review_url()
-
-
-
-
-
+        assert self.is_element_present(*ProductPageLocators.WRITE_REVIEW_LINK), 'No text abount lack the comments'

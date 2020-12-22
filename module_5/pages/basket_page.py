@@ -21,3 +21,22 @@ class BasketPage(BasePage):
     def should_not_be_basket_total_info(self):
         assert self.is_not_element_present(*BasketPageLocators.BASKET_VOUCHER_INFO), \
             "There is voucher to get discount in the basket"
+
+    def delete_item_from_basket(self):
+        self.browser.find_element(*BasketPageLocators.DELETE_PRODUCT_BTN).click()
+
+    def should_be_discount_input_form(self):
+        assert self.is_element_present(*BasketPageLocators.DISCOUNT_CODE_INPUT), \
+            'No field to fill in discount code'
+
+    def apply_discount(self, discount_code):
+        self.browser.find_element(*BasketPageLocators.BASKET_VOUCHER_INFO).click()
+        self.should_be_discount_input_form()
+        self.browser.find_element(*BasketPageLocators.DISCOUNT_CODE_INPUT).send_keys(discount_code)
+        self.browser.find_element(*BasketPageLocators.APPLY_DISCOUNT_BTN).click()
+
+    def should_be_success_applying_discount(self):
+        self.apply_discount(self)
+        assert self.is_element_present(*BasketPageLocators.DISCOUNT_SUCCESS_MESSAGE), \
+            'The discount is not applied'
+

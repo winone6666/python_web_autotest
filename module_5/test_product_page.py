@@ -65,7 +65,7 @@ class TestProductPage:
         page.should_not_be_checkout_btn_in_busket()
         page.should_not_be_goods_in_basket()
 
-class TestUserAddToBasketFromProductPage:
+class TestUserAddProductToBasketFromProductPage:
     @pytest.fixture(scope='function', autouse=True)
     def setup(self, browser):
         link = 'http://selenium1py.pythonanywhere.com/en-gb/accounts/login/'
@@ -87,3 +87,18 @@ class TestUserAddToBasketFromProductPage:
         page.solve_quiz_and_get_code()
         page.should_be_equal_product_name_in_basket()
         page.should_be_equal_amount_in_basket()
+
+    def test_user_can_delete_product_from_basket(self, browser):
+        page = ProductPage(browser, link)
+        page.open()
+        page.open_math_alert()
+        page.solve_quiz_and_get_code()
+        page.delete_item_from_basket()
+
+    def test_user_can_use_discount(self, browser):
+        page = ProductPage(browser, link)
+        page.open()
+        page.open_math_alert()
+        page.solve_quiz_and_get_code()
+        page.should_be_discount_input_form()
+        page.should_be_success_applying_discount()

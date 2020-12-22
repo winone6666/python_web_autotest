@@ -19,21 +19,26 @@ class ProductCatalogPage(BasePage):
         assert self.is_element_present(*ProductCatalogPageLocators.PRODUCT_STORE_INFO_IN_CATALOG), \
             'No info about storing product'
 
-    def find_product(self, product_for_search):
-        search_input = self.browser.find_element(*BasePageLocators.SEARCH_INPUT)
-        search_input.send_keys(product_for_search)
-        search_btn = self.browser.find_element(*BasePageLocators.SEARCH_BTN)
-        search_btn.click()
-        return product_for_search
+    def should_be_catalog_page(self):
+        self.should_be_catalogue_url()
+        self.should_be_short_product_info()
 
-    def should_be_find_special_product(self, name_of_found_product):
-        assert name_of_found_product == self.find_product(self), \
+    def find_product(self, product_for_search):
+        self.browser.find_element(*BasePageLocators.SEARCH_INPUT).send_keys(str(product_for_search))
+        self.browser.find_element(*BasePageLocators.SEARCH_BTN).click()
+        return self.browser.find_element(*ProductCatalogPageLocators.PRODUCT_NAME_IN_CATALOG).text
+
+    def should_be_find_special_product(self, product_for_search):
+        assert product_for_search == self.find_product(product_for_search), \
         'Found products is not equal of serched'
-        assert self.is_element_present(
-            *ProductCatalogPageLocators.HEADER_OF_PRODUCT_SEARCH_RU + "\"{}\"".format(name_of_found_product)), \
+        assert self.is_element_present(*ProductCatalogPageLocators.HEADER_OF_PRODUCT_SEARCH_RU), \
             'No info about search result'
 
-    def should_be_not_found_product_info(self):
-        self.find_product(self)
+    def should_be_not_found_product_info(self, incorrect_text):
+        self.browser.find_element(*BasePageLocators.SEARCH_INPUT).send_keys(str(incorrect_text))
+        self.browser.find_element(*BasePageLocators.SEARCH_BTN).click()
         assert self.is_element_present(*ProductCatalogPageLocators.NO_PRODUCT_MESSAGE_RU), \
             'No info about not found product'
+
+    def select_product(self):
+        self.browser.find_element(*ProductCatalogPageLocators.ADD_TO_BASKET_BTN_IN_CATALOG).click()

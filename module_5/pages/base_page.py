@@ -20,6 +20,10 @@ class BasePage():
         link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         link.click()
 
+    def go_to_product_page(self):
+        link = self.browser.find_element(*BasePageLocators.PRODUCT_LINK)
+        link.click()
+
     def is_element_present(self, how, what):
         try:
             self.browser.find_element(how, what)
