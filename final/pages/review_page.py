@@ -1,6 +1,7 @@
 from .base_page import BasePage
-from .locators import ReviewPageLocators
 from .locators import ProductPageLocators
+from .locators import ReviewPageLocators
+
 
 class ReviewPage(BasePage):
     def should_be_review_url(self):

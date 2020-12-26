@@ -1,6 +1,8 @@
+import random
+
 from .base_page import BasePage
 from .locators import LoginPageLocators
-import random
+
 
 class LoginPage(BasePage):
     def register_new_user(self, email, password):
@@ -10,7 +12,7 @@ class LoginPage(BasePage):
         password_input.send_keys("Ololoshkin2020")
         password_confirmed_input = self.browser.find_element(*LoginPageLocators.PASSWORD_CONFIRMED_INPUT)
         password_confirmed_input.send_keys(password)
-        submit_btn=self.browser.find_element(*LoginPageLocators.SIGN_UP_BTN)
+        submit_btn = self.browser.find_element(*LoginPageLocators.SIGN_UP_BTN)
         submit_btn.click()
 
     def should_be_login_page(self):
